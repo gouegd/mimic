@@ -1,21 +1,35 @@
 {
   "name": "mimic-it",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ES6 generator / iterator tool to replay interactions",
-  "main": "mimic.js",
-  "repository": "github.com:gouegd/mimic.git",
-  "author": "Gregory Desfour",
-  "license": "MIT",
+  "main": "./mimic.js",
+  "files": [
+    "./mimic.js"
+  ],
   "devDependencies": {
     "ava": "~0.17.0",
     "eslint": "^3.11.1",
     "nyc": "^10.0.0"
   },
-  "files": [
-    "mimic.js"
-  ],
   "scripts": {
     "test": "nyc ava",
     "tw": "ava --watch"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouegd/mimic.git"
+  },
+  "keywords": [
+    "es6",
+    "generator",
+    "iterator",
+    "replay",
+    "clone"
+  ],
+  "author": "gouegd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gouegd/mimic/issues"
+  },
+  "homepage": "https://github.com/gouegd/mimic#readme"
 }
