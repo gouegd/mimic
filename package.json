@@ -1,6 +1,6 @@
 {
   "name": "mimic-it",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ES6 generator / iterator tool to replay interactions",
   "main": "./src/mimic.js",
   "files": [
