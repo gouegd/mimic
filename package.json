@@ -2,9 +2,9 @@
   "name": "mimic-it",
   "version": "1.0.2",
   "description": "ES6 generator / iterator tool to replay interactions",
-  "main": "./mimic.js",
+  "main": "./src/mimic.js",
   "files": [
-    "./mimic.js"
+    "src/"
   ],
   "devDependencies": {
     "ava": "~0.17.0",
