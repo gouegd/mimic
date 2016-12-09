@@ -11,6 +11,7 @@
     "eslint": "^3.11.1",
     "nyc": "^10.0.0"
   },
+  "files": ["mimic.js"],
   "scripts": {
     "test": "nyc ava",
     "tw": "ava --watch"
