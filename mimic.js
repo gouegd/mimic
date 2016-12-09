@@ -27,8 +27,8 @@ function mimic(gen, prevCalls = []) {
     return(...args) {
       return saveAndCall('return', args)
     },
-    mimic() {
-      return mimic(gen, calls)
+    mimic({ steps = calls.length } = {}) {
+      return mimic(gen, calls.slice(0, steps))
     },
     [Symbol.iterator]() {
       return this

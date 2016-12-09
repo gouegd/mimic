@@ -1,7 +1,7 @@
 {
   "name": "mimic",
   "version": "1.0.0",
-  "description": "Replay an iterator up to its current state",
+  "description": "ES6 generator / iterator tool to replay interactions",
   "main": "mimic.js",
   "repository": "github.com:gouegd/mimic.git",
   "author": "Gregory Desfour",
