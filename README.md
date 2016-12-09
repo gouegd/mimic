@@ -1,3 +1,21 @@
+[![npm](https://img.shields.io/npm/v/mimic-it.svg?maxAge=3600)](https://www.npmjs.com/package/mimic-it)
+
+## Versioning
+
+This project follows [semantic versioning](http://semver.org/).
+
+## Install
+
+The ES6 version of mimic is hosted on NPM as 'mimic-it'.
+
+There is no ES5 version at the moment - please just use babel or similar in your toolchain, with regenerator, if you need to run this on an older environment.
+
+`npm i -S mimic-it`
+
+or
+
+`yarn add mimic-it`
+
 ## Usage
 
 ```
