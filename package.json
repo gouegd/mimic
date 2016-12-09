@@ -1,6 +1,6 @@
 {
   "name": "mimic-it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ES6 generator / iterator tool to replay interactions",
   "main": "mimic.js",
   "repository": "github.com:gouegd/mimic.git",
