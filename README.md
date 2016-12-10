@@ -23,7 +23,7 @@ or
 const it = mimic(gen)
 
 // same but specifying first steps
-const it = mimic(gen, [{ cmd: 'next', args: 2 }, { cmd: 'throw', args: new Error('oops') }])
+const it = mimic(gen, [{ cmd: 'next', args: [2, 42] }, { cmd: 'throw', args: [new Error('oops')] }])
 
 
 // do stuff...
