@@ -1,5 +1,5 @@
 const test = require('ava')
-const mimic = require('./mimic')
+const mimic = require('./src/mimic')
 
 function* gen() {
   yield 1

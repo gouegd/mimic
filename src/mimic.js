@@ -1,3 +1,5 @@
+const noop = () => {}
+
 /**
  * [mimic description]
  * @param  {[type]} gen            [description]
@@ -8,8 +10,8 @@ function mimic(gen, prevCalls = []) {
   const calls = [ ...prevCalls ]
   const it = gen()
 
-  calls.forEach(({cmd, args}) => {
-    it[cmd](...args)
+  calls.forEach(({cmd, args, after = noop}) => {
+    after(it[cmd](...args))
   })
 
   function saveAndCall(cmd, args) {
