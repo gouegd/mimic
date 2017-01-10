@@ -18,12 +18,19 @@ or
 
 ## Usage
 
-```
+```js
 // create a replayable iterator
 const it = mimic(gen)
 
-// same but specifying first steps
-const it = mimic(gen, [{ cmd: 'next', args: [2, 42] }, { cmd: 'throw', args: [new Error('oops')] }])
+// you can specifying first steps
+const it = mimic(gen, {
+  prevCalls: [{ cmd: 'next', args: [2, 42] }, { cmd: 'throw', args: [new Error('oops')] }]
+})
+
+// ...and / or specify initial args passed to the generator
+const it = mimic(gen, {
+  initArgs: [42, 'secondArg']
+})
 
 
 // do stuff...
